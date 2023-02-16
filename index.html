@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a</h1>
+        <h1 class="sub-title">random password</h1>
+        <h3 class="description">Never use an insecure password again</h3>
+        <button class="gen-pwd" onclick="generate()">Generate passwords</button>
+        <hr>
+        <div class="pwd-length">
+            <h3 class="description">Password Length : </h3>
+            <select name="length" id="dropdown">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+        <div class="passwords">
+            <button id="pwd1"></button>
+            <button id="pwd2"></button>
+        </div>
+        <div class="copy-btn">
+            <button onclick="copy1()" class="copy">Copy</button>
+            <button onclick="copy2()" class="copy">Copy</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
