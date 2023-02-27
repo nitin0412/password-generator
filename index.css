@@ -58,7 +58,7 @@ hr{
     justify-content: space-around;
 }
 #pwd1,#pwd2{
-    align-items: center;
+    text-align: center;
     width: 300px;
     height: 40px;
     background: #273549;
@@ -74,6 +74,7 @@ hr{
     border-radius: 6px;
     color: #55F991;
     margin: 10px 5px auto 5px;
+    padding: 6px 8px;
 }
 
 

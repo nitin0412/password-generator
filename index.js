@@ -5,17 +5,23 @@ let password2=document.querySelector("#pwd2");
 
 function generate(){
     let length=document.getElementById("dropdown");
-    password1.textContent=random(length.value);
-    password2.textContent=random(length.value);
+    password1.value=random(length.value);
+    password2.value=random(length.value);
 }
 
 function copy1(){
-    var input=password1.textContent;
-    alert("Copy Text : " + input);
+    var input=document.querySelector("#pwd1");
+    input.select();
+    input.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(input.value);
+    alert("Text Copied: " + input.value);
 }
 function copy2(){
-    var input=password2.textContent;
-    alert("Copy Text : "+input);
+    var input=document.querySelector("#pwd2");
+    input.select();
+    input.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(input.value);
+    alert("Text Copied: " + input.value);
 }
 
 function random(size){
